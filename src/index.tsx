@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     // /portfolio-new/
-  <BrowserRouter basename=''>
+  <BrowserRouter basename="/port/build/">
     <App />
   </BrowserRouter>
 );
