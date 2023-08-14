@@ -3,10 +3,10 @@ import {FC} from 'react';
 import {project} from "./ProjectsList";
 import {ProjectSkills} from "./projectsAttr/ProjectSkills";
 import {ProjectLink} from "./projectsAttr/projectLink";
-
+import {ProjectImg} from "./projectsAttr/projectImg";
 
 export const ProjectItem: FC<project> = (props) => {
-    const {links, skills} = props;
+    const {links, skills, img} = props;
     return (
         <section className="project">
             <article className="projectsTitles">
@@ -26,7 +26,7 @@ export const ProjectItem: FC<project> = (props) => {
                 <span>{props.description}</span>
             </article>
             <article>
-                {/* TODO: Нужно будет сделать еще картинки */}
+                <ProjectImg src={img}/>
             </article>
             <article>
                 <ProjectSkills skills={skills}/>

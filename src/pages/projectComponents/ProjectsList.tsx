@@ -7,6 +7,7 @@ export interface project {
     year: number,
     title: string,
     description: string,
+    img: string[],
     skills: string[],
     links: links[]
 }
@@ -30,7 +31,8 @@ export const ProjectsList: FC<IProjectsListProps> = ({projects}) => {
                              id={project.id}
                              links={project.links}
                              skills={project.skills}
-                             year={project.year}/>
+                             year={project.year}
+                             img={project.img}/>
             ))}
         </div>
     );

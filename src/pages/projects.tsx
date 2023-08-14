@@ -8,6 +8,7 @@ const projects: Array<project> = [
         title: 'Project 11231',
         description: "Просто проект",
         skills: ["html", "css", "JS"],
+        img: ["projects/flalist/flalist1.png", "projects/flalist/flalist2.png"],
         links: [
             {title: "github", url: "https://vk.com"},
             {title: "github", url: "https://vk.com"}
