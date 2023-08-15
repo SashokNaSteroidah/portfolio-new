@@ -9,10 +9,10 @@ interface ILinks {
 export const ProjectLink: FC<ILinks> = (props) => {
     return (
         <div className="ProjectLinks">
-            {props.links.map(link => {
+            {props.links.map((link, index) => {
                 return (
-                    <a className="ProjectLink" href={link.url}>
-                        <h3>{link.title}</h3>
+                    <a key={index} className="ProjectLink" href={link.url}>
+                        <p>{link.title}</p>
                     </a>
                 )
             })}

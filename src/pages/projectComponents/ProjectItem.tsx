@@ -11,27 +11,29 @@ export const ProjectItem: FC<project> = (props) => {
         <section className="project">
             <article className="projectsTitles">
                 <div className="ProjectTitle">
-                    <p>{props.id}</p>
-                    <span>{props.year}</span>
+                    <span>{`0${props.id}`}</span>
+                    <p>{props.year}</p>
                 </div>
                 <div className="ProjectTitle">
-                    <p>name</p>
-                    <h2>
+                    <span>name</span>
+                    <p>
                         {props.title}
-                    </h2>
+                    </p>
                 </div>
             </article>
-            <article>
-                <p>description</p>
-                <span>{props.description}</span>
+            <article className="ProjectDes">
+                <p className="projectAttr">description</p>
+                <p>{props.description}</p>
             </article>
             <article>
                 <ProjectImg src={img}/>
             </article>
             <article>
+                <p className="projectAttr">skills</p>
                 <ProjectSkills skills={skills}/>
             </article>
             <article>
+                <p className="projectAttr">links</p>
                 <ProjectLink links={links}/>
             </article>
 

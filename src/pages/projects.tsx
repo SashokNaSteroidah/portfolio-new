@@ -1,20 +1,6 @@
 import * as React from 'react';
-import {project, ProjectsList} from "./projectComponents/ProjectsList";
-
-const projects: Array<project> = [
-    {
-        id: 1,
-        year: 2019,
-        title: 'Project 11231',
-        description: "Просто проект",
-        skills: ["html", "css", "JS"],
-        img: ["projects/flalist/flalist1.png", "projects/flalist/flalist2.png"],
-        links: [
-            {title: "github", url: "https://vk.com"},
-            {title: "github", url: "https://vk.com"}
-        ]
-    },
-];
+import {ProjectsList} from "./projectComponents/ProjectsList";
+import {projectsInfo} from "./projects/projectsInfo";
 
 export const Projects = () => {
     return (
@@ -23,8 +9,8 @@ export const Projects = () => {
                 <h1>NIKITA PAVLUSHUN</h1>
             </div>
             <div className="rightMenu">
-                <h1>Projects</h1>
-                <ProjectsList projects={projects}/>
+                <h1 className="title">PROJECTS</h1>
+                <ProjectsList projects={projectsInfo}/>
             </div>
         </div>
     );

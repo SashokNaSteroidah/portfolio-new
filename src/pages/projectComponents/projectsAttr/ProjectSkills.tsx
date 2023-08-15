@@ -8,9 +8,9 @@ interface ISkills {
 export const ProjectSkills: FC<ISkills> = (skills) => {
     return (
         <div className="projectsSkills">
-            {skills.skills.map(skill => {
+            {skills.skills.map((skill, index) => {
                 return (
-                    <span className="projectsSkill">{skill}</span>
+                    <p key={index} className="projectsSkill">{skill}</p>
                 )
             })}
         </div>

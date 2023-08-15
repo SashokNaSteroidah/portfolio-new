@@ -23,7 +23,7 @@ interface IProjectsListProps {
 
 export const ProjectsList: FC<IProjectsListProps> = ({projects}) => {
     return (
-        <div>
+        <>
             {projects.map(project => (
                 <ProjectItem key={project.id}
                              title={project.title}
@@ -34,6 +34,6 @@ export const ProjectsList: FC<IProjectsListProps> = ({projects}) => {
                              year={project.year}
                              img={project.img}/>
             ))}
-        </div>
+        </>
     );
 };

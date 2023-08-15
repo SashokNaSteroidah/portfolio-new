@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {FC, useState} from 'react';
-// import {Modal} from "./modal";
+import {FC} from 'react';
 import {Link} from "react-router-dom";
 
 
@@ -14,7 +13,7 @@ export const Main: FC = () => {
                         <h1>NIKITA PAVLUSHIN</h1>
                         <h2>Привет, меня зовут <u>Никита</u>. Я Front-end разработчик</h2>
                         <div>
-                            <Link to="/projects">
+                            <Link to="/projectsInfo">
                                 Projects
                             </Link>
                             <Link to="#">Solo Projects</Link>
@@ -25,7 +24,6 @@ export const Main: FC = () => {
                     <img src="./images/mainScrean.svg" alt=""/>
                 </article>
             </section>
-            {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
         </>
     );
 };

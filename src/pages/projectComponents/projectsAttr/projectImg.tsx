@@ -7,10 +7,10 @@ interface IProjectImages {
 
 export const ProjectImg: FC<IProjectImages> = (images) => {
     return (
-        <div>
-            {images.src.map(image => {
+        <div className="projectImg">
+            {images.src.map((image, index) => {
                 return (
-                    <img src={image} alt=""/>
+                    <img key={index} src={image} alt=""/>
                 )
             })}
         </div>
