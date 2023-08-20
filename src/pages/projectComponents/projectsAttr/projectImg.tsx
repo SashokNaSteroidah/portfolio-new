@@ -10,7 +10,7 @@ export const ProjectImg: FC<IProjectImages> = (images) => {
         <div className="projectImg">
             {images.src.map((image, index) => {
                 return (
-                    <img key={index} src={image} alt=""/>
+                    <img key={index} src={`./images/projects/${image}`} alt=""/>
                 )
             })}
         </div>

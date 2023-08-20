@@ -7,10 +7,22 @@ export const projectsInfo: Array<project> = [
         title: 'Project 11231',
         description: "Просто проект",
         skills: ["HTML", "CSS", "JS"],
-        img: ["./images/projects/flalist/flalist1.png", "./images/projects/flalist/flalist2.png"],
+        img: ["flalist/flalist1.png", "flalist/flalist2.png"],
         links: [
             {title: "github", url: "https://vk.com"},
             {title: "github", url: "https://vk.com"}
         ]
     },
+    {
+        id: 2,
+        year: 2019,
+        title: 'Project 11231',
+        description: "Просто проект",
+        skills: ["HTML", "CSS", "JS"],
+        img: ["flalist/flalist1.png", "flalist/flalist2.png"],
+        links: [
+            {title: "github", url: "https://vk.com"},
+            {title: "github", url: "https://vk.com"}
+        ]
+    }
 ];

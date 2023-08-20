@@ -7,15 +7,20 @@ import {ProjectImg} from "./projectsAttr/projectImg";
 
 export const ProjectItem: FC<project> = (props) => {
     const {links, skills, img} = props;
+    let idCheck: boolean = false
+    if (props.id === 1) {
+        idCheck = true
+    }
     return (
         <section className="project">
+            {idCheck ? null : <hr/>}
             <article className="projectsTitles">
                 <div className="ProjectTitle">
-                    <span>{`0${props.id}`}</span>
+                    <p className="projectAttr">{`0${props.id}`}</p>
                     <p>{props.year}</p>
                 </div>
                 <div className="ProjectTitle">
-                    <span>name</span>
+                    <p className="projectAttr">name</p>
                     <p>
                         {props.title}
                     </p>
@@ -36,7 +41,6 @@ export const ProjectItem: FC<project> = (props) => {
                 <p className="projectAttr">links</p>
                 <ProjectLink links={links}/>
             </article>
-
         </section>
     );
 };
