@@ -15,8 +15,11 @@ export const Main: FC = () => {
                         <div>
                             <Link to="/projectsInfo">
                                 Projects
+                                <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1L1 12M12 0V12M12 1H1" stroke="black" stroke-width="2"/>
+                                </svg>
+
                             </Link>
-                            <Link to="#">Solo Projects</Link>
                         </div>
                     </div>
                 </article>
