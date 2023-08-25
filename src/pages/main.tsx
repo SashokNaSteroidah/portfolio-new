@@ -1,10 +1,15 @@
 import * as React from 'react';
-import {FC} from 'react';
+import {FC, useState} from 'react';
 import {Link} from "react-router-dom";
 
 
 export const Main: FC = () => {
-    // const [modalActive, setModalActive] = useState(true)
+    const [isLoaded, setIsLoaded] = useState(false)
+
+    const handleImageLoad = () => {
+        setIsLoaded(true);
+    };
+
     return (
         <>
             <section className="mainScreen">
@@ -24,7 +29,8 @@ export const Main: FC = () => {
                     </div>
                 </article>
                 <article>
-                    <img src="./images/mainScrean.svg" alt=""/>
+                    {!isLoaded && <div className="skeleton" />}
+                    <img onLoad={handleImageLoad} style={{ display: isLoaded ? 'block' : 'none' }} src="./images/mainScrean.svg" alt=""/>
                 </article>
             </section>
         </>
