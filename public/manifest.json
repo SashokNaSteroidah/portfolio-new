@@ -1,0 +1,8 @@
+{
+  "short_name": "Site-portfolio",
+  "name": "Site-portfolio by Nikita Pavlushin",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
