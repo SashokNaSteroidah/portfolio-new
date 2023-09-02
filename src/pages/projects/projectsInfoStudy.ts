@@ -21,7 +21,7 @@ export const projectsInfoStydy: Array<project> = [
         title: 'MNTM',
         description: "Лендинг для тренировки симантики, а также медиазапросов по заказу одного клиента",
         isFinish: true,
-        skills: ["HTML", "CSS"],
+        skills: ["HTML", "SASS"],
         img: ["flalist/flalist1.png", "flalist/flalist2.png"],
         links: [
             {title: "desktop version", url: "http://s91026w9.beget.tech/landing-master/html/index.html"},
