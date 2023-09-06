@@ -1,9 +1,9 @@
-// import {ProjectSortList} from "./projectComponents/projectSort/ProjectSortList";
 import * as React from 'react';
 import {useState} from 'react';
 import {project, ProjectsList} from "./projectComponents/ProjectsList";
 import {projectsInfo} from "./projects/projectsInfo";
 import {projectsInfoStydy} from "./projects/projectsInfoStudy";
+import {Link} from "react-router-dom";
 
 
 export const Projects = () => {
@@ -20,11 +20,13 @@ export const Projects = () => {
         <div className="projectsMenu">
             <div className="leftMenu">
                 <article>
-                    <h1>NIKITA PAVLUSHUN</h1>
+                    <Link to={"/"}>
+                        <h1>NIKITA PAVLUSHUN</h1>
+                    </Link>
                     {/*{<ProjectSortList sortItem={[...new Set(projectsInfo.map(project => project.skills).flat())]}/>}*/}
                     <div className="buttonChangeMenu">
                         <div>
-                            <button onClick={() => handleChange(projectsInfo, "PROJECTS")}>Пэт-проекты</button>
+                            <button onClick={() => handleChange(projectsInfo, "PET PROJECTS")}>Пэт-проекты</button>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  id="left-arrow-backward-sign"
                                  version="1.1" viewBox="0 0 15.699 8.707" xmlSpace="preserve">
@@ -33,7 +35,7 @@ export const Projects = () => {
                             </svg>
                         </div>
                         <div>
-                            <button onClick={() => handleChange(projectsInfoStydy, "COMPROJECT")}>Коммерческие проекты
+                            <button onClick={() => handleChange(projectsInfoStydy, "STUDY PROJECTS")}>Учебные проекты
                             </button>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  id="left-arrow-backward-sign"

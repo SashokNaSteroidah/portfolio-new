@@ -10,7 +10,7 @@ export const projectsInfo: Array<project> = [
             "По факту это мой первый проект на библиотеке React, который я делаю. По ссылке ниже вы можете ознакомиться с старым билдом без бекэнда",
         isFinish: false,
         skills: ["HTML", "SASS", "JS", "REACT", "REDUX", "TYPESCRIPT", "WEBPACK", "EXPRESS", "GIT", "DESIGN"],
-        img: ["flalist/flalist1.png", "flalist/flalist2.png"],
+        img: ["debetorum/debetorum1.png", "debetorum/debetorum2.png"],
         links: [
             {title: "desktop version", url: "http://s91026w9.beget.tech"},
             {title: "github", url: "https://github.com/SashokNaSteroidah/dock_contr"},
@@ -29,7 +29,7 @@ export const projectsInfo: Array<project> = [
             "но пока я все буду делать по этапам и выполнять рефакторинг при необходимости. Также осталю ссылочку для концептов, котороые были по ходу разработки",
         isFinish: false,
         skills: ["HTML", "SASS", "REACT", "TYPESCRIPT", "GIT", "WEBPACK", "DESIGNS"],
-        img: ["flalist/flalist1.png", "flalist/flalist2.png"],
+        img: ["port/port1.png", "port/port2.png"],
         links: [
             {title: "github", url: "https://github.com/SashokNaSteroidah/portfolio-new"},
             {title: "figma", url: "https://www.figma.com/file/3fJnZKmQpu8fQD6Iqr46zD/PortNew?type=design&node-id=0%3A1&mode=design&t=tQi45V4fzfd7dtW5-1"}
