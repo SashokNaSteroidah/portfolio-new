@@ -72,6 +72,10 @@
 
 .leftMenu
   article
+    margin: 0 0 0 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     position: sticky
     top: 0
     left: 0
@@ -89,6 +93,22 @@
     font-weight: bolder
     padding: 0 10px 0 0
 
+.contacts
+  position: fixed
+  left: 0
+  bottom: 0
+  display: flex
+  flex-direction: column
+  font-family: Inter, sans-serif
+  font-size: 30px
+  margin: 0 0 10px 10px
+  transition: .2s
+  a
+    transition: .2s
+    margin: 10px 0 0 0
+    text-decoration: underline
+    &:hover
+      color: grey
 
 .buttonChangeMenu
   display: inline-block
@@ -104,7 +124,7 @@
       transform: rotate(-180deg)
     &:hover
       transition: .2s
-      transform: translateX(10px)
+      text-decoration: underline
 //button
   //  border-radius: 25px
   //  border: black 2px solid
